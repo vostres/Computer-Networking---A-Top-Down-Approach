@@ -24,8 +24,11 @@
 	 - Transmission Control Protocol (TCP) 
 	 - Internet Protocol (IP) 
  - Another defintion for the internet is an infrastructure that provides services to applications.
+ - Internet applications run on end systems, not on packet switches in network core
+ - End systems attached to the Internet provide a socket interface that specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program running on another end system.
  - End systems attached to the Internet provide a socket interface that specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program running on another end system.
  - A protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.
+ -  Internet standards are developed by the Internet Engineering Task Force (IETF) [IETF 2020]. The IETF standards documents are called requests for comments (RFCs). RFCs started out as general requests for comments (hence the name) to resolve network and protocol design problems that faced the precursor to the Internet [Allman 2011]. RFCs tend to be quite technical and detailed. They define protocols such as TCP, IP, HTTP (for the Web), and SMTP (for e-mail). There are currently nearly 9000 RFCs. Other bod- ies also specify standards for network components
 
 ### Review Questions
  - What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?
