@@ -60,6 +60,18 @@
 	- The degree of electrical interference.
 - DSL is designed for short distances between 5 and 10 miles.
 - Cable internet access makes use if the cable television company's existing cable television infrastructure.
+- - fiber to the home (FTTH)
+  - 1 fiber per home to CO
+  - or fiber gets close to home and splits then into multiplöe fibers
+ - active optical networks (AON) and passive optical networks (PON)
+ - FTTH using PON: one optical network terminator (ONT) per Home, connected to neighbourhood splitter - connects to optical line terminator (OLT) - it connects to the internet via a telco router
+ - 5g fixed wireless - beam forming technology - data sent from provider to home
+ - - Ethernet and Wifi - LAN - local area network connects end system to edge router
+   - HFC - combination of fiber cable and coaxial cable
+
+
+
+
 - Physical media is categorized as
 	- Guides media:
 		- Fiber-optic cable
@@ -67,14 +79,16 @@
 			- They are immune to electromagnetic interference, have very low signal attinuation up to 100 KMs.
 			- The Optical Carrier (OC) standard link speeds range from 51.8 Mbps to 39.8 Gbps. These specifications are often referred to as OC-n, where the link speed equals n * 51.8 Mbps.
 		- Twisted-pair copper wire
+  - Unshielded twisted pair - UTP
 			- Consists of two insulated copper wires, each about 1 mm thick, arranged in a regular spiral pattern.
 			- The wires are twisted together to reduce the electrical interference from similar pairs close by.
 		- Coaxial cable
 			- Consists of two copper conductors, but the two are cocentric rather than parallel.
 			- It can be used as a guided shared medium.
 	- Unguided media:
+  - Terrestrial Radio Channels
 		- Wireless LAN
-		- Digital satellite channel
+		-  satellite radio channel - links two or more microwave transmitter - geostationary satelites and low-earth orbiting sat (LEO). 
 - The actual cost of physical link is relatively minor compared with other networking costs.
 ### Review Questions
 -  List four access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.
@@ -101,6 +115,7 @@
 ## Section 3. The Network Core
 ### Notes
  - To send a message from source end system to a destination end system, the source breaks long messages into smaller chunks of data known as packets.
+ - router and link-layer switches
  - Packet switches implement the store-and-forward mechanism.
 	- That means the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.
  - Propagation delay is the time takes for the bits to travel across the wire near the speed of light.
@@ -113,6 +128,10 @@
  - Packets suffer from delaying due to store-and-forward and queuing.
  - Packet loss occurs when there is a congestion in the network which results in the filling of the output buffer.
  - Each router has a forwarding table that maps destination addresses to the router's outbound links.
+ - circuit switching - end to end connection
+ - frequency division multiplaxing (FDM) - bandwidth
+ -  time-division multiplexing (TDM)
+ - 
 ### Review Questions
  - Suppose there is exactly one packet switch between a sending host and a receiving host. The transmission rates between the sending host and the switch and between the switch and the receiving host are R1 and R2, respectively. Assuming that the switch uses store-and-forward packet switching, what is the total end-to-end delay to send a packet of length L? (Ignore queuing, propagation delay, and processing delay.)
 	 - (L/R1)+(L/R2)
